@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./js/script.js" defer type="module"></script>
+  </head>
+  <body>
+
+  <div class="alert-error ">
+    Digite somente números
+  </div>
+
+  <div class="container">
+
+    <main class="cardOne">
+
+      <form action="">
+        <h1 class="title">Cálculo de IMC</h1>
+        <div class="input-wrapper">
+          <label for="weight">Peso <small>(kg)</small></label>
+          <input 
+                id="weight" 
+                type="text" 
+                placeholder="60" />
+        </div>
+        <div class="input-wrapper">
+          <label for="height">Altura <small>(cm)</small></label>
+          <input 
+                id="height" 
+                type="text" 
+                placeholder="165" />
+        </div>
+
+        <button type="submit">
+                Calcular IMC
+                <img src="./assets/arrow.svg" alt="Seta apontando para direita">
+        </button>
+      </form>
+
+    </main>
+
+    <div class="socialIcons">
+          <div class="github">
+            <a href="https://github.com/Dave-zip" target="_blank">
+              <img src="./assets/logo-github.svg" width="30px" alt="Icone do gitHub" >
+            </a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/davi-ss/" target="_blank">
+              <img src="./assets/logo-linkedin.svg" width="30px" alt="Icone do linkedin">
+            </a>
+          </div>
+        </div>
+  </div>
+
+  <div class="modal-wrapper ">
+    <div class="modal cardTwo">
+      <h2 class="modal-title title">
+        <button class="close">
+          <img src="./assets/close.svg" alt="imagem para fechar o popup">
+        </button>
+
+        <span>Seu IMC é:</span>
+
+        <table class="table">
+          <th class="th">
+            <tr>
+              <td class="firstTd" colspan="3">Veja a interpretação do IMC</td>
+            </tr>
+          </th>
+          <tr>
+            <td>IMC</td>
+            <td>Classificação</td>
+            <td style="text-align: center;">
+              Obesidade <small>(grau)</small>
+            </td>
+          </tr>
+          <tr class="highlightOne" >
+            <td>Abaixo de 18,5</td>
+            <td>Abaixo do peso</td>
+            <td style="text-align: center;">0</td>
+          </tr>
+          <tr class="highlightTwo" >
+            <td>Entre 18,5 e 24,99</td>
+            <td>Peso normal</td>
+            <td style="text-align: center;">0</td>
+          </tr>
+          <tr class="highlightThree" >
+            <td>Entre 25,0 e 29,99</td>
+            <td>Sobrepeso</td>
+            <td style="text-align: center;">I</td>
+          </tr>
+          <tr class="highlightFour" >
+            <td>Entre 30,0 e 39,99</td>
+            <td>Obesidade</td>
+            <td style="text-align: center;">II</td>
+          </tr>
+          <tr class="highlightFive" >
+            <td>Acima de 40,0</td>
+            <td>Obesidade</td>
+            <td style="text-align: center;">III</td>
+          </tr>
+        </table>
+      
+      </h2>
+    </div>
+  </div>
+
+  </body>
+</html>
